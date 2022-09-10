@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ABOUT ME</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/harsha resume pic.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p><br></p>
+                    <p>To build a career that offers growth
+                        and opportunities to fully utilize my
+                        knowledge and skills , while
+                        contributing my best to the
+                        organization for which i work.
+                        I am flexible, reliable and possess excellent time keeping skills. 
+                        I am an enthusiastic, self-motivated,
+                         reliable, responsible and hard working person. 
+                         I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a 
+                         team environment as well as using own initiative.
+                        I always try to learn to new things which
+                        improves my knowledge and focuses me to grow through difficult paths
+                        which builts me a strong background where I can be of my own.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('personal info')">Personal info</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="personal info">
+                        <ul>
+                            <li><span>Name : </span>K.SREE HARSHA</li>
+                            <li><span>Father Name : </span>K.SRINIVASA RAO</li>
+                            <li><span>Mother Name : </span>K.SURYA KALA</li>
+                            <li><span>DOB : </span>31-12-2001</li>
+                            <li><span>Gender : </span>MALE</li>
+                            <li><span>Address : </span>Dno:9-58, Jai prakash nagar, Turangi, Kakinada, Andhra Pradesh,
+                                                pincode:533002.</li>
+                            <li><span>Nationality : </span>Indian</li>
+                            <li><span>Languages : </span>ENGLISH, TELUGU, HINDI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span> PERSONAL TRAITS </span><br> Adaptable <br> Enthusiastic <br> Quick Learner </li>
+                            <li><span> HOBBIES </span><br> Reading books <br> Playing Games </li>
+                            <li><span> INTERESTS </span><br> Dancing <br> EDITING </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>BTECH<br>Aditya Engineering College<br>CGPA:9.01</li>
+                            <li><span>2017 - 2019</span><br>INTERMEDIATE<br>Narayana College<br>CGPA: 9.8</li>
+                            <li><span>2017 </span><br>SCHOOL<br>Sama Public School<br>CGPA: 10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
